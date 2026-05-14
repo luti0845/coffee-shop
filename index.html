@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Coffee — 手工精品咖啡</title>
+  <meta name="description" content="Artisan Coffee 提供來自世界各地的精品單品咖啡與手工甜點，在溫暖舒適的空間中享受一杯完美的咖啡。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 導覽列 ===== -->
+  <nav class="navbar" id="navbar" aria-label="主要導覽">
+    <a href="#" class="navbar__logo">Artisan Coffee</a>
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="#features" class="navbar__link">特色</a></li>
+      <li><a href="#about" class="navbar__link">關於我們</a></li>
+      <li><a href="#menu" class="navbar__link">菜單</a></li>
+      <li><a href="#testimonials" class="navbar__link">顧客評價</a></li>
+      <li><a href="#contact" class="navbar__link navbar__cta">預約座位</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburgerBtn" aria-label="開啟選單" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <img src="images/hero.png" alt="精品咖啡拉花藝術特寫" class="hero__bg" loading="eager" width="1920" height="1080">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__badge">Est. 2018 · 台北</span>
+      <h1 class="hero__title">每一杯，都是一場旅行</h1>
+      <p class="hero__subtitle">我們嚴選來自世界各地的精品咖啡豆，以職人精神烘焙沖煮，為你帶來獨特的風味體驗。</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">探索菜單</a>
+        <a href="#about" class="btn btn--outline">我們的故事</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== 特色 ===== -->
+  <section class="features" id="features">
+    <div class="section-header fade-in">
+      <p class="section-label">為何選擇我們</p>
+      <h2 class="section-title">用心打造每一個細節</h2>
+      <p class="section-desc">從產地直送到杯中風味，我們對品質的堅持貫穿每一個環節。</p>
+    </div>
+    <div class="features__grid">
+      <div class="feature-card fade-in">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="feature-card__title">產地直送</h3>
+        <p class="feature-card__desc">與衣索比亞、哥倫比亞、巴拿馬等產區的小農莊園直接合作，確保每一批豆子的可追溯性與新鮮度。</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+        </div>
+        <h3 class="feature-card__title">職人烘焙</h3>
+        <p class="feature-card__desc">由資深烘豆師根據每支豆子的特性量身訂製烘焙曲線，以小批次烘焙釋放最佳風味層次。</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <h3 class="feature-card__title">溫暖空間</h3>
+        <p class="feature-card__desc">原木與綠植打造的舒適環境，適合獨處閱讀、朋友聚會或專注工作，感受家一般的溫暖。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 關於我們 ===== -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__image-wrapper fade-in">
+        <img src="images/interior.png" alt="Artisan Coffee 溫暖的店內環境" class="about__image" loading="lazy" width="600" height="750">
+      </div>
+      <div class="about__content fade-in">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">從一粒咖啡豆開始的夢想</h2>
+        <p class="section-desc" style="text-align:left; max-width:none; margin-bottom:16px;">
+          2018 年，懷抱著對精品咖啡的熱愛，我們在台北巷弄中開了這間小小的咖啡廳。從產地拜訪、烘焙研究到沖煮技術，我們不斷探索咖啡的無限可能。
+        </p>
+        <p class="section-desc" style="text-align:left; max-width:none;">
+          我們相信，一杯好咖啡不只是飲品，更是一段故事、一種生活態度。每一位來到 Artisan 的客人，都值得擁有最真誠的款待。
+        </p>
+        <div class="about__stats">
+          <div class="stat">
+            <div class="stat__number">7+</div>
+            <div class="stat__label">年專業經驗</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">12</div>
+            <div class="stat__label">合作莊園</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">50K+</div>
+            <div class="stat__label">滿意顧客</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 菜單 ===== -->
+  <section class="menu" id="menu">
+    <div class="section-header fade-in">
+      <p class="section-label">Our Menu</p>
+      <h2 class="section-title">精選飲品與甜點</h2>
+      <p class="section-desc">嚴選豆種、手工沖煮，每一杯都是對味覺的禮讚。</p>
+    </div>
+    <div class="menu__tabs fade-in">
+      <button class="menu__tab active" data-tab="coffee">咖啡</button>
+      <button class="menu__tab" data-tab="specialty">特調</button>
+      <button class="menu__tab" data-tab="dessert">甜點</button>
+    </div>
+    <div class="menu__grid fade-in" id="menuGrid">
+      <!-- 咖啡類（預設顯示） -->
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">衣索比亞 耶加雪菲</div>
+          <div class="menu-item__desc">花香、柑橘、茉莉 · 手沖</div>
+        </div>
+        <div class="menu-item__price">$180</div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">哥倫比亞 薇拉</div>
+          <div class="menu-item__desc">焦糖、堅果、巧克力 · 手沖</div>
+        </div>
+        <div class="menu-item__price">$170</div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">經典拿鐵</div>
+          <div class="menu-item__desc">雙份濃縮、絲滑奶泡 · 拉花</div>
+        </div>
+        <div class="menu-item__price">$150</div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">冰釀冷萃</div>
+          <div class="menu-item__desc">低溫慢萃 12 小時 · 清爽甘甜</div>
+        </div>
+        <div class="menu-item__price">$160</div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">巴拿馬 藝伎</div>
+          <div class="menu-item__desc">熱帶水果、蜂蜜、茶感 · 手沖</div>
+        </div>
+        <div class="menu-item__price">$280</div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div>
+          <div class="menu-item__name">卡布奇諾</div>
+          <div class="menu-item__desc">濃郁奶泡、肉桂點綴</div>
+        </div>
+        <div class="menu-item__price">$140</div>
+      </div>
+      <!-- 特調類 -->
+      <div class="menu-item" data-category="specialty" style="display:none">
+        <div>
+          <div class="menu-item__name">黑糖拿鐵</div>
+          <div class="menu-item__desc">手炒黑糖、濃郁奶香</div>
+        </div>
+        <div class="menu-item__price">$170</div>
+      </div>
+      <div class="menu-item" data-category="specialty" style="display:none">
+        <div>
+          <div class="menu-item__name">抹茶燕麥奶</div>
+          <div class="menu-item__desc">京都宇治抹茶 · 植物奶</div>
+        </div>
+        <div class="menu-item__price">$180</div>
+      </div>
+      <div class="menu-item" data-category="specialty" style="display:none">
+        <div>
+          <div class="menu-item__name">玫瑰荔枝氣泡飲</div>
+          <div class="menu-item__desc">花香果香、沁涼氣泡</div>
+        </div>
+        <div class="menu-item__price">$160</div>
+      </div>
+      <div class="menu-item" data-category="specialty" style="display:none">
+        <div>
+          <div class="menu-item__name">蜂蜜柚子茶</div>
+          <div class="menu-item__desc">韓國柚子醬、台灣蜂蜜</div>
+        </div>
+        <div class="menu-item__price">$150</div>
+      </div>
+      <!-- 甜點類 -->
+      <div class="menu-item" data-category="dessert" style="display:none">
+        <div>
+          <div class="menu-item__name">巴斯克乳酪蛋糕</div>
+          <div class="menu-item__desc">法國奶油乳酪、焦香表面</div>
+        </div>
+        <div class="menu-item__price">$160</div>
+      </div>
+      <div class="menu-item" data-category="dessert" style="display:none">
+        <div>
+          <div class="menu-item__name">提拉米蘇</div>
+          <div class="menu-item__desc">馬斯卡彭乳酪、濃縮咖啡</div>
+        </div>
+        <div class="menu-item__price">$150</div>
+      </div>
+      <div class="menu-item" data-category="dessert" style="display:none">
+        <div>
+          <div class="menu-item__name">檸檬磅蛋糕</div>
+          <div class="menu-item__desc">新鮮檸檬皮、糖霜淋面</div>
+        </div>
+        <div class="menu-item__price">$120</div>
+      </div>
+      <div class="menu-item" data-category="dessert" style="display:none">
+        <div>
+          <div class="menu-item__name">肉桂捲</div>
+          <div class="menu-item__desc">現烤肉桂、奶油糖霜</div>
+        </div>
+        <div class="menu-item__price">$130</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 圖片展示 ===== -->
+  <section class="gallery" id="gallery">
+    <div class="section-header fade-in">
+      <p class="section-label">Gallery</p>
+      <h2 class="section-title">我們的日常</h2>
+      <p class="section-desc">在每一個角落，用心沖煮的溫度。</p>
+    </div>
+    <div class="gallery__grid fade-in">
+      <div class="gallery__item">
+        <img src="images/interior.png" alt="咖啡廳舒適的用餐空間" loading="lazy" width="600" height="600">
+      </div>
+      <div class="gallery__item">
+        <img src="images/hero.png" alt="精心製作的拉花咖啡" loading="lazy" width="400" height="400">
+      </div>
+      <div class="gallery__item">
+        <img src="images/drinks.png" alt="多種特色飲品" loading="lazy" width="400" height="400">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 顧客評價 ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header fade-in">
+      <p class="section-label">Testimonials</p>
+      <h2 class="section-title">顧客怎麼說</h2>
+      <p class="section-desc">來自熱愛咖啡的你們，最真實的聲音。</p>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testimonial-card__text">「這裡的耶加雪菲讓我重新認識了咖啡的花香調。每次來都像一場味覺旅行，環境也很棒，適合一個人靜靜享受。」</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">林</div>
+          <div>
+            <div class="testimonial-card__name">林小姐</div>
+            <div class="testimonial-card__role">平面設計師</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testimonial-card__text">「我幾乎每週都帶筆電來這裡工作。Wi-Fi 穩定、座位舒適、咖啡更不用說了。巴斯克乳酪蛋糕是必點！」</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">陳</div>
+          <div>
+            <div class="testimonial-card__name">陳先生</div>
+            <div class="testimonial-card__role">軟體工程師</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testimonial-card__text">「帶朋友來過好幾次了，每個人都讚不絕口。特調飲品很有創意，尤其推薦玫瑰荔枝氣泡飲，太驚艷了！」</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">王</div>
+          <div>
+            <div class="testimonial-card__name">王小姐</div>
+            <div class="testimonial-card__role">行銷企劃</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA 區塊 ===== -->
+  <section class="cta" id="contact">
+    <div class="cta__inner fade-in">
+      <p class="section-label" style="color:var(--color-terracotta)">Stay Connected</p>
+      <h2 class="cta__title">訂閱我們的咖啡電子報</h2>
+      <p class="cta__desc">第一時間獲得新品上市通知、限定活動邀請及會員專屬優惠。</p>
+      <form class="cta__form" id="ctaForm" aria-label="電子報訂閱表單">
+        <label for="emailInput" class="sr-only">電子郵件地址</label>
+        <input type="email" id="emailInput" class="cta__input" placeholder="輸入你的 Email" required autocomplete="email">
+        <button type="submit" class="cta__submit">立即訂閱</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== 頁尾 ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">Artisan Coffee</div>
+        <p class="footer__brand-desc">從產地到杯中，用心沖煮每一杯。在溫暖的空間裡，享受屬於你的咖啡時光。</p>
+      </div>
+      <div>
+        <h3 class="footer__heading">營業資訊</h3>
+        <ul class="footer__list">
+          <li><a href="#">週一至週五 8:00–21:00</a></li>
+          <li><a href="#">週六、日 9:00–22:00</a></li>
+          <li><a href="#">國定假日照常營業</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">快速連結</h3>
+        <ul class="footer__list">
+          <li><a href="#features">特色介紹</a></li>
+          <li><a href="#menu">飲品菜單</a></li>
+          <li><a href="#about">品牌故事</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">聯絡方式</h3>
+        <ul class="footer__list">
+          <li><a href="#">台北市大安區咖啡巷 42 號</a></li>
+          <li><a href="tel:+886212345678">(02) 1234-5678</a></li>
+          <li><a href="mailto:hello@artisancoffee.tw">hello@artisancoffee.tw</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Artisan Coffee. All rights reserved.</span>
+      <span>以熱情與堅持，沖煮每一杯。</span>
+    </div>
+  </footer>
+
+  <!-- ===== 螢幕閱讀器專用隱藏標籤 ===== -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+
+  <script src="main.js"></script>
+</body>
+</html>
